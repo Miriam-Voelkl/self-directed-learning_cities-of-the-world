@@ -1,10 +1,10 @@
-import Link from "next/link";
+import StyledLink from "./cities/components/StyledLink";
 
 export default function HomePage() {
   return (
     <>
       <h1>Welcome to this website with dynamic routing to some cities! 🌃</h1>
-      <Link href="/cities">Travel to the cities 🛫</Link>
+      <StyledLink href="/cities">Travel to the cities 🛫</StyledLink>
     </>
   );
 }

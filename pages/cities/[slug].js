@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { cities } from "@/lib/data";
-import Link from "next/link";
+import StyledLink from "./components/StyledLink";
 
 export default function City() {
   const router = useRouter();
@@ -20,7 +20,7 @@ export default function City() {
       </h1>
       <p>Population: {population} </p>
       <p>{description}</p>
-      <Link href="/cities">🚂 Travel back to all cities</Link>
+      <StyledLink href="/cities">🚂 Travel back to all cities</StyledLink>
     </>
   );
 }
